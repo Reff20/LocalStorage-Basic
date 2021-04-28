@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+}
+input:focus, textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+/*
+= = = = = VARIÁVEIS = = = = =
+*/
+
+:root{
+    --cor-primaria: #43a6fd;
+    --cor-secundaria: #2976ba;
+    --cor-fonte-primaria: #FFFF;
+    --cor-fonte-secundaria: #04425f;
+}
+
+
+
+/*
+= = = = = STYLE HEADER = = = = =
+*/
+
+header{
+    background-color: var(--cor-primaria);
+    padding: 5%; 
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav a{
+    margin: 0 3%;
+    font-weight: 700;
+    color: var(--cor-fonte-primaria);
+    font-size: 130%;
+}
+header nav a:hover{
+    color: var(--cor-fonte-secundaria);
+    transition: 0.4s ease;
+}
+
+
+
+/*
+= = = = = INPUTS = = = = = 
+*/
+body div{
+    background-color: var(--cor-primaria);
+    margin: 10% 20%;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input,textarea{
+    resize: vertical;
+    width: 40%;
+    margin: 1%;
+    padding: 0;
+}
+button{
+    margin: 1% 0;
+    padding: 0 8%;
+    outline: none;
+}
+button:hover{
+    outline: none;
+}

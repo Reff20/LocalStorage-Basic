@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+}
+input:focus, textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+/*
+= = = = = VARIÁVEIS = = = = =
+*/
+
+:root{
+    --cor-primaria: #43a6fd;
+    --cor-secundaria: #2976ba;
+    --cor-fonte-primaria: #FFFF;
+    --cor-fonte-secundaria: #04425f;
+}
+
+
+
+/*
+= = = = = STYLE HEADER = = = = =
+*/
+
+header{
+    background-color: var(--cor-primaria);
+    padding: 5%; 
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav a{
+    margin: 0 3%;
+    font-weight: 700;
+    color: var(--cor-fonte-primaria);
+    font-size: 130%;
+}
+header nav a:hover{
+    color: var(--cor-fonte-secundaria);
+    transition: 0.4s ease;
+}
+
+
+
+/*
+= = = = = POSTS = = = = =
+*/
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8%;
+    background-color: rgb(187, 187, 187);
+    padding: 2% 0;
+    border-radius: 3%;
+}
+.post h3{
+    text-align: justify;
+}
+.post img{
+    padding: 2% 0;
+    box-shadow: 2px 2px 4px #0000;
+    width: 90%;
+}
+.post p{
+    padding: 0 5%;
+    text-align: center;
+}
